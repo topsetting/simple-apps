@@ -13,8 +13,7 @@ pipeline {
                 sh'''
                 cd app
                 npm install
-                cd ../
-                cp /opt/jenkins/workspace/app-pipeline/app/.env.example /opt/jenkins/workspace/app-pipeline/app/.env
+                cp .env.example .env
                 '''
             }
         }
