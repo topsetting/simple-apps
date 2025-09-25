@@ -13,7 +13,8 @@ pipeline {
                 sh'''
                 cd app
                 npm install
-                cp .env.example .env
+                cp ../
+                cp .env.example app/.env
                 '''
             }
         }
